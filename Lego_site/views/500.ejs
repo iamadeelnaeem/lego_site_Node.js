@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>500 Internal Server Error</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body tabindex="-1">
+
+    <!-- views/500.ejs -->
+    <%- include('partials/navbar', { page: '/' }) %>
+
+    <div class="container mx-auto my-16 text-center">
+        <h1 class="text-5xl font-bold text-red-500">500</h1>
+        <p class="text-lg font-medium text-gray-700">Internal Server Error</p>
+        <p class="text-sm text-gray-500">Oops! Something went wrong on our end. We're working to fix it.</p>
+    </div>
+
+</body>
+</html>

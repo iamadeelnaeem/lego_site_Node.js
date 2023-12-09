@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body tabindex="-1">
+    <!-- Include the navbar partial and specify the "page" parameter -->
+    <%- include('partials/navbar', {page: '/' }) %>
+
+        <!-- Hero -->
+        <div class="container mx-auto mt-10 flex flex-col items-center">
+            <div class="hero bg-base-200 rounded-lg p-6">
+                <div class="hero-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold green_gradient">
+                            Welcome to the Lego Collections
+                        </h1>
+
+                        <p class="py-6 text-gray-400">
+                            Dive into the ultimate Lego experience, right from the comfort of your home. Explore, build,
+                            and
+                            share your unique creations!
+                        </p>
+
+                        <a href="/lego/sets" class="btn btn-primary">Get Started Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 grid-auto-rows-auto">
+            <!-- Lego Set 1 -->
+            <div class="card-container">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt3ad5b3c87e4b33ab/75292_alt13.png"
+                            alt="Lego Star Wars" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Lego Star Wars</h2>
+                        <p>Embark on intergalactic adventures with Lego Star Wars sets.</p>
+                        <div class="card-actions justify-end">
+                            <a href="/lego/sets/1" class="btn btn-primary">
+                                View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lego Set 2 -->
+            <div class="card-container">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt4bddd1401984043f/71790_alt1.png"
+                            alt="Lego Ninjago" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Lego Ninjago</h2>
+                        <p>Unleash the power of the ninja with Lego Ninjago sets.</p>
+                        <div class="card-actions justify-end">
+                            <a href="/lego/sets/2"
+                                class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lego Set 3 -->
+            <div class="card-container">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt5a4d250e166b6400/60364_alt1.png"
+                            alt="Lego City" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Lego City</h2>
+                        <p>Build your own bustling metropolis with Lego City sets.</p>
+                        <div class="card-actions justify-end">
+                            <a href="/lego/sets/3" class="btn btn-primary">
+                                View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+</body>
+
+</html>
